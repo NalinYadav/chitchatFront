@@ -1,0 +1,36 @@
+routes:
+  - handle: request
+    method: GET
+    path: /api/:path
+    script:
+      src: |
+        const { redirect } = require('@railway/redirect')
+
+        redirect('https://chitchatapi-production.up.railway.app/api/:path')
+
+  - handle: request
+    method: POST
+    path: /api/:path
+    script:
+      src: |
+        const { redirect } = require('@railway/redirect')
+
+        redirect('https://chitchatapi-production.up.railway.app/api/:path')
+
+  - handle: request
+    method: PUT
+    path: /api/:path
+    script:
+      src: |
+        const { redirect } = require('@railway/redirect')
+
+        redirect('https://chitchatapi-production.up.railway.app/api/:path')
+
+  - handle: request
+    method: DELETE
+    path: /api/:path
+    script:
+      src: |
+        const { redirect } = require('@railway/redirect')
+
+        redirect('https://chitchatapi-production.up.railway.app/api/:path')
